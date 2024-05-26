@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Content</title>
+    <link rel="stylesheet" href="css/course_content.css"> <!-- Include your CSS file -->
+</head>
+<body>
+  <main>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+
+        <div id="menu">
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+                </nav>
+              </div>
+    </header>
+
+        <!--Menu list and customization control-->
+        <div id="myDropdown" class="dropdown-content">
+            <ul>
+                <i>
+                  <a href="Accounts/Login/Login_files/login.html" class="links">
+                    <li>Login</li>
+                  </a>
+                  <a href="Accounts/Login/Login_files/registration.html" class="links">
+                    <li>Sign Up</li>
+                  </a>
+                  <a href="Accounts\Login\Login_files\course-content.html" class="links">
+                    <li>My Courses</li>
+                  </a>
+                  <a href="Accounts/To-Do-List/index.html" class="links">
+                    <li>My To-Do List</li>
+                  </a>
+                  <a href="" class="links">
+                    <li>Setting</li>
+                  </a>
+                  <a href="" class="links">
+                    <li>About Us</li>
+                  </a>
+                  <a href="" class="links">
+                    <li>Careers</li>
+                  </a>
+                  <a href="" class="links">
+                    <li>Resources</li>
+                  </a>
+                  <a href="" class="links">
+                    <li>Contact Us</li>
+                  </a>
+                </i>
+              </ul>
+          </div>
+
+    <main id="course-content">
+        <div id="topic_label">
+         <label for="topic" id="topic">#Topic</label>
+        <!-- Course content will be dynamically populated here -->
+    </div>
+
+    <div id="content">
+        <div id="sub_topic">
+        <label for="sub_topic">
+            Sub Topic
+        </label>
+    </div><br>
+        All Coures Content appears here!!!
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your LMS</p>
+    </footer>
+
+    <!-- Include your client-side JavaScript file -->
+    <script src="js/script.js"></script>
+  </main>
+</body>
+</html>
