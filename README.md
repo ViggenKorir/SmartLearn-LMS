@@ -1,7 +1,7 @@
-# SmartLearn-LMS
+# SmartLearn-XR
 # AI-Powered Learning Management System (LMS)
 
-This repository focuses on incorporating artificial intelligence (AI) technology into a Learning Management System (LMS) to enhance its functionality and effectiveness. The goal is to leverage AI capabilities to improve various aspects of teaching, learning, and administration within educational settings.
+This repository focuses on incorporating artificial intelligence (AI), Augmented Reality & Virtual reality technologies into a Learning Management System (LMS) to enhance its functionality and effectiveness. The goal is to leverage AI capabilities to improve various aspects of teaching, learning, and administration within educational settings.
 
 ## Overview
 
