@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/list.css">
+    <title>Home</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom left, #c681c3, #71abd2);
+            /* gradient */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        section {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #title {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: underline;
+        }
+
+        #sub_heading {
+            font-size: 24px;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+
+        .dashboard {
+            margin: 50px auto;
+            height: auto;
+            max-width: 800px;
+            background-color: rgba(240, 248, 255, 0.8);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        #item {
+            border-radius: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        button {
+            background-color: #71abd2;
+            color: #fff;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: none;
+            font-size: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c681c3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <p id="title">My To Do List</p>
+            <div class="dashboard">
+                <div id="item">
+                    <label for="task" id="sub_heading">Add Task:</label><br>
+                    <input type="text" id="task" placeholder="Enter task">
+                    <button id="add_task">+</button><br>
+                    <hr>
+                    <label for="pending" id="sub_heading">Pending Tasks</label>
+                    <ul id="pending_list"></ul>
+                    <label for="completed" id="sub_heading">Completed</label>
+                    <ul id="completed_list"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const addTaskButton = document.getElementById("add_task");
+            const taskInput = document.getElementById("task");
+            const pendingList = document.getElementById("pending_list");
+            const completedList = document.getElementById("completed_list");
+
+            addTaskButton.addEventListener("click", function () {
+                const taskValue = taskInput.value.trim();
+                if (taskValue !== "") {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = taskValue;
+                    const deleteButton = document.createElement("button");
+                    deleteButton.textContent = "✓";
+                    deleteButton.addEventListener("click", function () {
+                        listItem.remove();
+                        completedList.appendChild(listItem);
+                        deleteButton.remove();
+                    });
+                    listItem.appendChild(deleteButton);
+                    pendingList.appendChild(listItem);
+                    taskInput.value = "";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

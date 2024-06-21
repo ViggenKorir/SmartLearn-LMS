@@ -1,46 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learning Management System</title>
-  <link href="css/signUp.css" rel="stylesheet" type="text/css" />
+  <link href="css/signUp.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<main>
-  <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <!-- Add more navigation links as needed -->
-    </ul>
-</nav>
+  <main>
+    <header>
+      <h2>Welcome to</h2>
+      <h1>SmartLearn-XR</h1>
+      <p>Empowering smart learning methods with AI & AR</p>
+    </header>
 
-  <h1>Welcome to Your Learning Management App</h1>
-  <p>This App will help you manage and track your courses effectively.</p>
+    <div id="right">
+      <section class="form-section">
+        <div class="form-container">
 
-  <div class="form-container">
-    <form action="process_registration.php" method="post" class="form">
-        <div class="form-background"></div> <!-- Background image container -->
-        <h1>Sign Up</h1>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" minlength="8" required>
-        <br>
-        <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="password" name="password" minlength="8" required>
-        <br>
-        <input type="submit" value="Sign Up">
-        <p>Have an Account? <a href="Login.html">Log In</a></p>
-    </form>
-</div>
-</main>
+          <p>
+          <h2>SmartLearn-XR</h2>
+          <p>Smart Learning Revolution</p>
+          </p>
+
+          <form id="register-form" class="pure-form">
+            <h2>Register</h2>
+            <fieldset>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="second_name" placeholder="Second Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+
+            <input type="password" placeholder="Password" id="password" required>
+            <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+
+            <button type="submit" class="pure-button pure-button-primary">Register</button>
+            </fieldset>
+
+            <p>Have an account? <a href="Login.html">Log In</a></p>
+          </form>
+
+          <form>
+            <div class="form-group">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" name="loginUsername">
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="loginPassword">
+            </div>
+            <div class="form-group">
+                <button type="submit">Log In</button>
+            </div>
+        </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
   <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js"></script>
