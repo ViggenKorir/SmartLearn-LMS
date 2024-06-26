@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #1995AD, #00246B);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 2em;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+#features {
+    padding: 2em;
+}
+
+#features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#features li {
+    margin-bottom: 20px;
+}
+
+#features h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#testimonials {
+    padding: 2em;
+}
+
+#testimonials ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#testimonials li {
+    margin-bottom: 20px;
+}
+
+#testimonials p {
+    font-size: 1.2em;
+}
+
+#testimonials span {
+    font-size: 0.8em;
+    color: #666;
+}
+
+#download {
+    padding: 2em;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#download button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#contact {
+    padding: 2em;
+}
+
+#contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 20px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+    clear: both;
+}
